@@ -1,17 +1,22 @@
-import React from 'react';
+import React from "react";
 import "../css/Footer.css";
 
-const Footer =(() => {
+const Footer = () => {
   return (
     <div>
-      <hr style={{width:"100%", boxShadow:"unset", textDecorationThickness:"100px"}}/>
+      <hr
+        style={{
+          width: "100%",
+          boxShadow: "unset",
+          textDecorationThickness: "100px",
+        }}
+      />
       <div class="footer">
         <div class="heading">
-        
           <h2>Citizen hub center</h2>
         </div>
         <div class="content">
-        <div class="services">
+          <div class="services">
             <h4>Services</h4>
             <p>Citizen Care Hub: A digital platform offering </p>
             <p>streamlined access to government services,</p>
@@ -21,6 +26,7 @@ const Footer =(() => {
           <div class="services">
             <h4>Services</h4>
             <p>complaint register</p>
+            <p>comlaint details</p>
             <p>complaint status</p>
           </div>
           <div class="social-media">
@@ -38,7 +44,7 @@ const Footer =(() => {
               <i class="fab fa-facebook"></i> Facebook
             </p>
             <p>
-             <i class="fab fa-instagram"></i> Instagram
+              <i class="fab fa-instagram"></i> Instagram
             </p>
           </div>
           <div class="links">
@@ -58,7 +64,6 @@ const Footer =(() => {
       </div>
     </div>
   );
-}
-);
+};
 
-export default Footer
+export default Footer;

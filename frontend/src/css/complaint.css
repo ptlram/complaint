@@ -4,9 +4,9 @@
     display: flex;
     flex-direction: column;
     gap: 1px;
-    background: linear-gradient(#2c2477,#3d33ac,#6363cc);
-    width: 30%;
-    margin-left: 35%;
+    background: linear-gradient(#544ab2,#7b76b3,rgb(93, 93, 168));
+    width: 80%;
+    margin-left: 10%;
     margin-top: 5%;    
     margin-bottom: 10%;
     border-radius: 10px;
