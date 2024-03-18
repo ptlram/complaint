@@ -1,6 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 
+//customer
 import Login from "./user/Login";
 import Home from "./user/Home";
 import Complaint from "./user/Complaint";
@@ -10,7 +11,12 @@ import Contact from "./user/Contact";
 import Complaintdetails from "./user/complaintdetails";
 import Userprofile from "./user/Userprofile";
 import { useState, useEffect } from "react";
+
+//admin
 import { Admin } from "./admin/admin";
+import Newcom from "./admin/Newcom";
+import Pendingcom from "./admin/Pendingcom";
+import Donecom from "./admin/Donecom";
 
 function App() {
   const [users, setusers] = useState([]);
@@ -46,6 +52,8 @@ function App() {
   useEffect(() => {
     getcomlaint();
   }, []);
+
+  // to show user complaint only
 
   const [detail, setdetail] = useState([]);
 
@@ -87,7 +95,16 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/profile" element={<Userprofile />} />
+      </Routes>
+
+      <Routes>
         <Route path="/admin" element={<Admin />} />
+        <Route
+          path="/newcomplaint"
+          element={<Newcom complaint={complaint} />}
+        />
+        <Route path="/pendingcomlaint" element={<Pendingcom />} />
+        <Route path="/donecomplaint" element={<Donecom />} />
       </Routes>
     </>
   );

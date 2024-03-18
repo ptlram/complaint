@@ -1,5 +1,12 @@
-import React from "react";
+import AdNevbar from "./adminNevbar.jsx";
 
 export const Admin = () => {
-  return <div>admin</div>;
+  return (
+    <>
+      <div>
+        <AdNevbar />
+      </div>
+      <div>ksnbbcdb</div>
+    </>
+  );
 };

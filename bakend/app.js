@@ -91,7 +91,7 @@ app.get("/api/complaints/:email", async (req, res) => {
 });
 
 const mongo = mongoose
-  .connect("mongodb://localhost:27017/citizen")
+  .connect("mongodb+srv://ramvijaypatel96:ram@cluster0.vvyksiw.mongodb.net/")
   .then(() => {
     console.log("connected");
     app.listen(5000, () => {

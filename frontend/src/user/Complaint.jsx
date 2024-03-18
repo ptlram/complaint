@@ -81,6 +81,9 @@ const Complaint = () => {
     <>
       <Nevbar />
       <h1>{user.email}</h1>
+      <div className="coom">
+        <p style={{ fontSize: "50px" }}>Register your complaint</p>
+      </div>
 
       <form onSubmit={handleSubmit}>
         <div className="com">
